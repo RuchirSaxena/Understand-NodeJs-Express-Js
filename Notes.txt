@@ -1,0 +1,41 @@
+Introduction
+=================
+1.Javascript runtime built on chrome's V8 javascript engine
+2.Javascript runnig on serve
+3.Used to build powerfull , fast and scalabe web applications
+4.Uses an event-driven , non-blocking I/O model
+
+Non-Blocking I/O 
+===================
+1.Works on as single thread using non-blocking I/O calls
+2.Suppuorts tens of thousands concurrent connections
+3.Optimizes throughput and scalability in web appications with many I/O operations
+4.This makes Node.js apps extremely fast and efficient
+
+Event Loop
+============
+single threaded
+Supports concurrency via events and callbacks
+EventEmitter class is used to bind events and event listeners
+
+
+    EventEmitters => events1 ,event 2... => Event Loop  => Event Handlers
+
+WhAT CAN WE BUILD with Node JS?
+==================================
+1.Rest APIs and Backend applications
+2.Real-Time Services(chat,Games etc.)
+3.Blogs , CMS, Social applications
+4.Utilities and tools
+5.Anything that is not CPU-intensive    
+
+Popular modules of Node JS
+==============================
+Express =>Web Development Framework
+Connect =>Extensible HTTP server Framework
+Socket.io =>Server side component for webscokets
+Pug/Jade =>Template engine inspired by HAML
+Mongo/Mongoose =>Here Mongo Db is a no SQL Dtabase and Mongoose is an ORM (Object Relational Mapper)
+Coffee-Script -CoffeeScript is a compiler , basically its a superset of javascript similar to that of typescript
+Redis-Redis client Library (No-sql database ) also a caching system
+
