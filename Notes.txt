@@ -39,3 +39,78 @@ Mongo/Mongoose =>Here Mongo Db is a no SQL Dtabase and Mongoose is an ORM (Objec
 Coffee-Script -CoffeeScript is a compiler , basically its a superset of javascript similar to that of typescript
 Redis-Redis client Library (No-sql database ) also a caching system
 
+Express JS
+==============
+Express js is a minimmalistic , open source web framework for Node.js
+1.Used to build powerful web appications and APIs
+2.Most popular framework for Node.js
+3.Uses MVC concepts
+
+MiddleWare
+============
+MiddleWare are the functions that have the acess to the request and response Object and also have the next piece of request and response after that.
+
+Note: Order in the MiddleWare is very important
+
+Template engine for node JS
+=============================
+Ejs , Pug/Jade 
+
+Eg:
+<ul>
+ <% customers.forEach(function(customer){ %>
+     <li><%= customer.first_name %></li>
+     <% }) %>
+</ul>
+
+
+ <% -> is used to when we dont have to show data and we only need any command of ejs
+
+ <%= -> is used when we need to show the actual data 
+
+ Also to include partial view we use below code
+
+ <% include partials/header %> //Including header page
+
+ <% include partials/footer %> //Including footer page
+
+
+ MongoDB Installation
+ ========================
+ 1.Download mongodb from mongodb.com
+ 2.Run it and select custom in install options 
+ 3.Set the download location to C: by creating a folder in C: drive by the name mongodb and then select this to install mongodb here.
+ 4.Create 2 folders =>data and log inside the momgodb folder recently created in C: drive
+ 5.Inside data folder created db folder inside it.
+ 6.Navigate to mongodb folder => cd mongodb =>cd bin
+
+7.To install mongodb as service use in below command :
+
+ mongod --directoryperdb --dbpath C:\mongodb\data\db --logpath C:\mongodb\log\mongo.log --logappend --rest --install
+
+ 8.After running above command , run below command
+
+ net start MongoDB
+
+ Note : If there is an error in above command than close cmd and run it as administrator , also cliear all the data inside db and log folder recently created
+ Then run => sc delete MongoDb and then repeat from step 6
+
+ 9.Commands =>
+
+ show collections =>To get the list of current created dbs
+
+ use [dbname][customerapp] =>to use this db and if not present then create this db
+
+//To insert into db
+ db.customers.insert([
+     {first_name:'joe',last_name:'dow',email:'joe@gmail.com'}
+     {first_name:'ruchir',last_name:'saxena',email:'ruchirsaxena@gmail.com'}
+ ])
+
+ //To find all records
+ db.customers.find() =>Returns all the inserted records
+
+
+
+
+      
